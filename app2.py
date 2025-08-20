@@ -8,8 +8,17 @@ from io import BytesIO
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import cm
+# Set page config
+st.set_page_config(
+    page_title="ResiliSense",
+    page_icon="🌍",
+    layout="wide"
+)
 
-st.set_page_config(page_title="Community Vulnerability & Nutrition Intelligence", layout="wide")
+# Add a clean title header
+st.title("🌍 ResiliSense")
+st.caption("Interactive Policy Dashboard for Vulnerability & Nutrition Insights")
+# st.set_page_config(page_title="Community Vulnerability & Nutrition Intelligence", layout="wide")
 
 # ==============================
 # Helpers
